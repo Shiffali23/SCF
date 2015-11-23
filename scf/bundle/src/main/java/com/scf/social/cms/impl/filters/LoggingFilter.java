@@ -1,4 +1,4 @@
-package com.social.cms.impl.filters;
+package com.scf.social.cms.impl.filters;
 
 import java.io.IOException;
 

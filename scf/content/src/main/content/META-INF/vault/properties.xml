@@ -6,8 +6,8 @@
 <entry key="version">1.0-SNAPSHOT</entry>
 <entry key="dependencies" />
 <entry key="packageFormatVersion">2</entry>
-<entry key="description">Social Package</entry>
-<entry key="group">Social</entry>
+<entry key="description">Social-SCF Package</entry>
+<entry key="group">Social-SCF</entry>
 <entry key="name">scf-content</entry>
-<entry key="path">/etc/packages/Social/scf-content-1.0-SNAPSHOT.zip</entry>
+<entry key="path">/etc/packages/Social-SCF/scf-content-1.0-SNAPSHOT.zip</entry>
 </properties>

@@ -6,7 +6,7 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.social.cms</groupId>
+        <groupId>com.scf.social.cms</groupId>
         <artifactId>scf</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -17,7 +17,7 @@
 
     <artifactId>scf-content</artifactId>
     <packaging>content-package</packaging>
-    <name>Social Package</name>
+    <name>Social-SCF Package</name>
 
     <dependencies>
         <dependency>
@@ -52,13 +52,13 @@
                 <artifactId>content-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <group>Social</group>
+                    <group>Social-SCF</group>
                     <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>scf-bundle</artifactId>
-                            <target>/apps/social/install</target>
+                            <target>/apps/scf/install</target>
                         </embedded>
                     </embeddeds>
                     <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>

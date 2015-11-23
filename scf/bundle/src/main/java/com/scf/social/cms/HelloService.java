@@ -1,4 +1,4 @@
-package com.social.cms;
+package com.scf.social.cms;
 
 /**
  * A simple service interface

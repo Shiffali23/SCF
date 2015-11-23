@@ -1,4 +1,4 @@
-package com.social.cms.impl;
+package com.scf.social.cms.impl;
 
 import javax.jcr.Repository;
 
@@ -7,7 +7,7 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.jcr.api.SlingRepository;
 
-import com.social.cms.HelloService;
+import com.scf.social.cms.HelloService;
 
 /**
  * One implementation of the {@link HelloService}. Note that

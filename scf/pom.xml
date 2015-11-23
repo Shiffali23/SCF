@@ -5,13 +5,13 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <groupId>com.social.cms</groupId>
+    <groupId>com.scf.social.cms</groupId>
     <artifactId>scf</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Social - Reactor Project</name>
-    <description>Maven Multimodule project for Social.</description>
+    <name>Social-SCF - Reactor Project</name>
+    <description>Maven Multimodule project for Social-SCF.</description>
 
     <prerequisites>
         <maven>3.0.2</maven>

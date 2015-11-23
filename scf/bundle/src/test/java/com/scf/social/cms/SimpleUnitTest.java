@@ -1,4 +1,4 @@
-package com.social.cms;
+package com.scf.social.cms;
 
 import static org.junit.Assert.*;
 
