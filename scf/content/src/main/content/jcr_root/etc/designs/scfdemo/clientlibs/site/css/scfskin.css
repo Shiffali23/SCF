@@ -1,0 +1,101 @@
+.scf {
+	font-family: "Myriad Pro",helvetica, arial;
+    color: #554b42;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.scf .scf-quiet {
+    font-weight: normal;
+}
+
+.scf h4 {
+	color: #29282e;
+}
+
+.scf h2 {
+	font-size: 24px;
+	color: #29282e;
+	margin: 0px;
+	font-weight: 100;
+}
+
+.scf .scf-link {
+	color: #ed3f30;	
+}
+
+.scf .scf-link:visited {
+	color: #ed3f30;
+}
+
+.scf a {
+	color: #ed3f30;
+}
+
+.scf button {
+	color: #FFFFFF;
+	background: #7F0000;
+    border-radius: 18px;
+}
+
+.scf input[type='submit']:hover {
+	background: #400000;
+}
+
+.scf button:hover {
+	background: #400000;
+}
+
+.scf input[type='submit'] {
+	color: #FFFFFF;
+	background: #7F0000;
+    border-radius: 18px;
+}
+
+input[type="text"].scf-input {
+	border: 1px solid #400000;
+}
+
+.scf button[type='reset'] {
+	color: #FFFFFF;
+	background-color: #29282e;
+    border-radius: 18px;
+}
+
+.scf button[type='reset']:hover {
+	background-color: #C3C3C3;
+}
+
+.scf button[type='reset']:active {
+	background-color: #787878;
+}
+
+.scf button[type='reset'][disabled="disabled"] {
+	background-color: #DCDCDC;
+}
+
+/***** tags *****/
+.scf-guide .scf-topic-listitem .scf-selected-tag, .scf-selected-tag {
+	padding: 8px;
+	margin-right: 0px;
+	background-color: #29282e;
+	color: #FFFFFF;
+	font-size: 12px;
+    border-radius: 11px;
+}
+ul.scf-horizontal-tag-list {
+    margin:0px;
+    padding:0px;
+}
+
+/****** pagination styles **********/
+.scf-page {
+    border-radius: 12px;
+    border: 1px solid #29282e;
+}
+a.scf-currentPage {
+    color: #FFFFFF;
+    background: #29282e;
+    border: 1px solid #ed3f30;
+}
+
