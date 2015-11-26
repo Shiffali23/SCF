@@ -5,4 +5,4 @@
     cq:lastReplicationAction="Activate"
     jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="cq:ClientLibraryFolder"
-    categories="[apps.scfhanlebardemo]"/>
+    categories="[apps.scfhandlebardemo]"/>
