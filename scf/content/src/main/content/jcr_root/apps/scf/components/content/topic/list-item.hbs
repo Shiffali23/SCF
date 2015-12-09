@@ -1,0 +1,11 @@
+<div class="scf-topic-listitem" data-component-id="{{id}}" data-scf-component="social/forum/components/hbs/topic">
+    <div class="scf-topic-col1">
+        <a href="{{friendlyUrl}}"><h3>{{subject}} - {{status}}</h3></a>
+        <div>
+            <a href="{{author.profileURL}}">{{author.name}}</a> <span class="scf-quiet">{{i18n "Posted"}} {{pretty-time created}}</span>
+        </div>
+        <p class="scf-comment-msg">
+            {{abbreviate message maxLength=256 safeString=configuration.isRTEEnabled}} <a href="{{friendlyUrl}}">{{i18n "Read More"}}</a>
+        </p>
+    </div>
+</div>
