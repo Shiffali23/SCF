@@ -3,5 +3,5 @@
 %><cq:includeClientLib categories="cq.foundation-main"/><%
 %><cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/><%
     currentDesign.writeCssIncludes(pageContext); %>
-<cq:includeClientLib categories="apps.scfdemo"/>
+<cq:includeClientLib categories="apps.scfdemo,cq.social.commons.widgets"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
