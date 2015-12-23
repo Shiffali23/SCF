@@ -1,0 +1,31 @@
+
+<div class="scf-includeClientLib">{{includeClientLib categories="apps.scf,apps.scf.ideation"}}</div>
+
+
+
+<div class="scf scf-forum" data-component-id="{{id}}" data-scf-component="scf/components/ideation/forum">
+    <header>
+        <h2 class="scf-forum-heading">{{i18n "Blogs" }}</h2>
+        <button class="scf-forum-newtopic scf-js-newtopic" evt="click=toggleComposer">{{i18n "Add Blog"}}</button>
+        <div class="scf-clear-both"></div>
+    </header>
+    <div class="scf-composer-block scf-js-composer-block scf-is-collapsed">
+        <form evt="submit=addComment" class="scf-composer">
+            <input class="scf-composer-msg" type="text" data-attrib="subject" name="subject" placeholder="{{i18n "Title"}}" />
+            <textarea class="scf-composer-msg" type="text" data-attrib="message" name="message" placeholder="{{i18n "Content"}}" class="comment-composer-input"{{#if configuration.isRTEEnabled}} data-field-type="rte"{{/if}}></textarea>
+            <div class='scf-composer-toolbar'>
+                <div class="scf-composer-actions">
+                    <button type="reset" class="scf-composer-action" evt="click=toggleComposer" >{{i18n "Cancel"}}</button>
+                    <input type="submit" value="{{i18n "Post"}}" evt="submit=addComment"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <ul class="scf-topic-list">
+        {{#each items}}
+            {{#if isVisible}}
+                <li>{{include this resourceType="scf/components/ideation/topic" template="list-item"}}</li>
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>

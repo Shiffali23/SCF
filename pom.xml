@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T  D E S C R I P T I O N                                   -->
+    <!-- ====================================================================== -->
+    <groupId>com.scf.social.samples</groupId>
+    <artifactId>aem-social-scf-extensions</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>AEM SCF Extensions</name>
+	
+	
+	  <properties>
+            <crx.host>localhost</crx.host>
+            <crx.port>4502</crx.port>
+            <crx.username>admin</crx.username>
+            <crx.password>admin</crx.password>
+            <publish.crx.host>localhost</publish.crx.host>
+            <publish.crx.port>4503</publish.crx.port>
+            <publish.crx.username>admin</publish.crx.username>
+            <publish.crx.password>admin</publish.crx.password>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        </properties>
+
+    <scm>
+        <connection>scm:git:git@github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension.git</connection>
+        <developerConnection>scm:git:git@github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension.git</developerConnection>
+        <url>https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension/tree/master</url>
+        <tag>HEAD</tag>
+    </scm>
+	
+	 <profiles>
+            <profile>
+                <id>autoInstallBundle</id>
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.sling</groupId>
+                            <artifactId>maven-sling-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <id>install-bundle</id>
+                                    <goals>
+                                        <goal>install</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </build>
+            </profile>
+        </profiles>
+
+    <!-- ====================================================================== -->
+    <!-- M O D U L E S                                                          -->
+    <!-- ====================================================================== -->
+    <modules>
+        <module>bundles/aem-scf-extensions</module>
+        <module>content</module>
+    </modules>
+</project>

@@ -1,4 +1,0 @@
-#base=js
-handlebars.js
-backbone.js
-scripts-ajax.js
