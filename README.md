@@ -1,22 +1,30 @@
-aem-scf-sample-components-extension
-===================================
+cqscf
+========
 
-Sample package for AEM Social Communities - Social Component Framework (SCF).  Examples of extending Communities components to build a new social component.
+This a content package project generated using the multimodule-content-package-archetype.
 
-building the sample
-===================
+Building
+--------
 
-* change directory to the root of the repository aem-scf-sample-components-extension/
-* run *mvn clean install*
-* a successful build should create a bundle artifact in *bundles/aem-scf-extensions* and a package artifact in *content/target*
+This project uses Maven for building. Common commands:
 
-installing the sample
-=====================
+From the root directory, run ``mvn -PautoInstallPackage clean install`` to build the bundle and content package and install to a CQ instance.
 
-* use the package manager at http://[server]/crx/packmgr/index.jsp and upload the zip file found at *content/target*
-* install the package
-* check out the ideation component at http://[server]/content/acme/en/ideas.html
+From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to build *just* the bundle and install to a CQ instance.
 
- 
+Using with VLT
+--------------
+
+To use vlt with this project, first build and install the package to your local CQ instance as described above. Then cd to `content/src/main/content/jcr_root` and run
+
+    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
+
+Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
+
+Specifying CRX Host/Port
+------------------------
+
+The CRX host and port can be specified on the command line with:
+mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
 
 
