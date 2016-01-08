@@ -44,36 +44,36 @@
 }
 
 .scf a {
-	color: #ed3f30;
+	color: #0D3C22;
 }
 
 .scf button {
 	color: #FFFFFF;
-	background: #7F0000;
+	background: #25B565;
     border-radius: 18px;
 }
 
 .scf input[type='submit']:hover {
-	background: #400000;
+	background: #0D3C22;
 }
 
 .scf button:hover {
-	background: #400000;
+	background: #0D3C22;
 }
 
 .scf input[type='submit'] {
 	color: #FFFFFF;
-	background: #7F0000;
+	background: #25B565;
     border-radius: 18px;
 }
 
 input[type="text"].scf-input {
-	border: 1px solid #400000;
+	border: 1px solid #0D3C22;
 }
 
 .scf button[type='reset'] {
 	color: #FFFFFF;
-	background-color: #29282e;
+	background-color: #25B565;
     border-radius: 18px;
 }
 
@@ -93,7 +93,7 @@ input[type="text"].scf-input {
 .scf-guide .scf-topic-listitem .scf-selected-tag, .scf-selected-tag {
 	padding: 8px;
 	margin-right: 0px;
-	background-color: #29282e;
+	background-color:#25B565;
 	color: #FFFFFF;
 	font-size: 12px;
     border-radius: 11px;

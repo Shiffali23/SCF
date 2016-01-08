@@ -29,12 +29,10 @@ import org.slf4j.LoggerFactory;
  * component implementation. This makes it possible to only make changes needed for customization without having to
  * implement all the APIs specified by {@link Comment}.
  */
-@Component(name = "Intellimeet Social Component Factory")
+@Component(name = "Blog Social Component Factory")
 @Service
-public class IdeaSocialComponentFactory extends AbstractSocialComponentFactory implements SocialComponentFactory {
-
-
-    private static final Logger LOG = LoggerFactory.getLogger(IdeaSocialComponentFactory.class);
+public class CustomBlogSocialComponentFactory extends AbstractSocialComponentFactory implements SocialComponentFactory {
+    private static final Logger LOG = LoggerFactory.getLogger(CustomBlogSocialComponentFactory.class);
     @Reference
     private CommentSocialComponentListProviderManager commentListProviderManager;
 
@@ -43,7 +41,7 @@ public class IdeaSocialComponentFactory extends AbstractSocialComponentFactory i
         try {
             LOG.info("This Resource ----------------------------------------------------------"+ resource);
             LOG.info("commentListProviderManager ----------------------------------------------------------"+ commentListProviderManager);
-            return new IdeaSocialComponent(resource, this.getClientUtilities(resource.getResourceResolver()),commentListProviderManager);
+            return new BlogSocialComponent(resource, this.getClientUtilities(resource.getResourceResolver()),commentListProviderManager);
         } catch (RepositoryException e) {
             return null;
         }
@@ -56,8 +54,7 @@ public class IdeaSocialComponentFactory extends AbstractSocialComponentFactory i
             LOG.info("commentListProviderManager ----------------------------------------------------------"+ commentListProviderManager);
             LOG.info("request ----------------------------------------------------------"+ request);
             LOG.info("Component Factory ----------------------------------------------------------"+ this);
-
-            return new IdeaSocialComponent(resource, this.getClientUtilities(request),this.getQueryRequestInfo(request),commentListProviderManager);
+            return new BlogSocialComponent(resource, this.getClientUtilities(request),this.getQueryRequestInfo(request),commentListProviderManager);
         } catch (RepositoryException e) {
             return null;
         }
@@ -68,7 +65,7 @@ public class IdeaSocialComponentFactory extends AbstractSocialComponentFactory i
         try {
             LOG.info("This Resource ----------------------------------------------------------"+ resource);
             LOG.info("commentListProviderManager ----------------------------------------------------------"+ commentListProviderManager);
-            return new IdeaSocialComponent(resource, clientUtils, listInfo,commentListProviderManager);
+            return new BlogSocialComponent(resource, clientUtils, listInfo,commentListProviderManager);
         } catch (RepositoryException e) {
             return null;
         }

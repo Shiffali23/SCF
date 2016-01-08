@@ -2,7 +2,7 @@
     "use strict";
     var Idea = SCF.Topic.extend({
         modelName: "IdeaModel",
-        setStatus: function(status) {
+        setTech: function(tech) {
             var error = _.bind(function(jqxhr, text, error) {
                 this.log.error("error setting status " + error);
                 this.trigger('idea:statuserror', {
@@ -19,7 +19,7 @@
                 });
             }, this);
             var postData = {
-                'status': status,
+                'tech': tech,
                 ':operation': 'social:setTechnology'
             };
             $CQ.ajax(SCF.config.urlRoot + this.get('id') + SCF.constants.URL_EXT, {
@@ -68,9 +68,9 @@
 
     var IdeaView = SCF.TopicView.extend({
         viewName: "Idea",
-        setStatus: function(e){
-            var status = this.getField("tech");
-            this.model.setStatus(status);
+        setTech: function(e){
+            var tech = this.getField("tech");
+            this.model.setTech(tech);
             e.preventDefault();
         },
         addLike:function(event){

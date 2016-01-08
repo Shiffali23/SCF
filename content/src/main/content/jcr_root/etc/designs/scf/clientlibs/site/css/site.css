@@ -60,7 +60,7 @@ body {
 	line-height: 50px;
 	display: inline-block;
 	padding: 0px 10px;
-	background-color: #ed3f30;
+	background-color: #25B565;
 	color: white;
 	font-size: 20px;
 }
@@ -68,7 +68,7 @@ body {
 	color: #ed3f30;
 }
 .header-bar .btn {
-	background-color: #f6f6f6;
+	background-color: #25B565;
 	color: #ed3f30;
 	margin-top: 6px;
 }
@@ -76,7 +76,6 @@ body {
 	padding: 20px;
 }
 .banner {
-	background-image: url('/etc/designs/scf/bg.jpg');
 	height: 250px;
 	background-position-x: 300px;
 	background-position-y: 680px;
@@ -108,11 +107,11 @@ body {
 	margin: 0px 30px;
 }
 .navigation .nav a {
-	color: #ed3f30;
+	color:#25B565;
 	font-size: 16px;
 }
 .navigation .nav li.active a {
-	background-color: #29282e;
+	background-color: #25B565;
 	color: white;
 }
 .footer {

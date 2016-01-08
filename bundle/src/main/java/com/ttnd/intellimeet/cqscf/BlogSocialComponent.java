@@ -21,12 +21,13 @@ import org.slf4j.LoggerFactory;
 /**
  * Created by Priyanku on 1/4/2016.
  */
-public class IdeaSocialComponent extends AbstractPost<ForumConfiguration> implements Post<ForumConfiguration> {
+public class BlogSocialComponent extends AbstractPost<ForumConfiguration> implements Post<ForumConfiguration> {
 
-    private static final Logger LOG = LoggerFactory.getLogger(IdeaSocialComponent.class);
+    private static final Logger LOG = LoggerFactory.getLogger(BlogSocialComponent.class);
     private Tag techTag;
     private List<Tag> tags;
     private ValueMap properties;
+    Logger log = LoggerFactory.getLogger(BlogSocialComponent.class);
 
     /**
      * Construct a comment for the specified resource and client utilities.
@@ -35,7 +36,7 @@ public class IdeaSocialComponent extends AbstractPost<ForumConfiguration> implem
      * @param commentListProviderManager list manager to use for listing content
      * @throws RepositoryException if an error occurs
      */
-    public IdeaSocialComponent(final Resource resource, final ClientUtilities clientUtils,
+    public BlogSocialComponent(final Resource resource, final ClientUtilities clientUtils,
                                final CommentSocialComponentListProviderManager commentListProviderManager) throws RepositoryException{
         super(resource, clientUtils, commentListProviderManager);
         filterTags();
@@ -50,7 +51,7 @@ public class IdeaSocialComponent extends AbstractPost<ForumConfiguration> implem
      * @param commentListProviderManager list manager to use for listing content
      * @throws RepositoryException if an error occurs
      */
-    public IdeaSocialComponent(final Resource resource, final ClientUtilities clientUtils,
+    public BlogSocialComponent(final Resource resource, final ClientUtilities clientUtils,
                                final QueryRequestInfo queryInfo, final CommentSocialComponentListProviderManager commentListProviderManager)
             throws RepositoryException {
         super(resource, clientUtils, queryInfo, commentListProviderManager);
@@ -58,7 +59,7 @@ public class IdeaSocialComponent extends AbstractPost<ForumConfiguration> implem
         this.properties = ResourceUtil.getValueMap(resource);
     }
 
-    public IdeaSocialComponent(final Resource resource, final ClientUtilities clientUtils, final QueryRequestInfo queryInfo,
+    public BlogSocialComponent(final Resource resource, final ClientUtilities clientUtils, final QueryRequestInfo queryInfo,
                                final Resource latestPost, final int numReplies,
                                final CommentSocialComponentListProviderManager listProviderManager) throws RepositoryException {
         super(resource, clientUtils, queryInfo, latestPost, numReplies, listProviderManager);

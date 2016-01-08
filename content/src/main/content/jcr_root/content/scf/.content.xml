@@ -7,6 +7,7 @@
         cq:designPath="/etc/designs/scf"
         cq:lastModified="{Date}2014-04-08T18:19:57.202+05:30"
         cq:lastModifiedBy="admin"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Acme"
         sling:redirect="true"

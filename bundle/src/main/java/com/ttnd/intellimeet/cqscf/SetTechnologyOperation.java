@@ -25,7 +25,7 @@ import java.util.Map;
 @Component(immediate = true)
 @Service
 @Property(name = PostOperation.PROP_OPERATION_NAME, value = "social:setTechnology")
-public class SetStatusOperation extends AbstractSocialOperation implements PostOperation{
+public class SetTechnologyOperation extends AbstractSocialOperation implements PostOperation{
     
     @Reference
     private ForumOperations forumService;
@@ -35,7 +35,7 @@ public class SetStatusOperation extends AbstractSocialOperation implements PostO
 
     @Override
     protected SocialOperationResult performOperation(SlingHttpServletRequest req) throws OperationException {
-        final String statusToSet = req.getParameter("status");
+        final String statusToSet = req.getParameter("tech");
         final Resource idea = req.getResource();
         final ValueMap props = idea.adaptTo(ValueMap.class);
         final String[] tags = props.get("cq:tags", new String[]{});

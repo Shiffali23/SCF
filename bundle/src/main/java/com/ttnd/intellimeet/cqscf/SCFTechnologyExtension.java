@@ -17,7 +17,7 @@ import java.util.Map;
 
 @Component(name = "Ideation Status Extension", immediate = true, metatype = true)
 @Service
-public class IdeationStatusExtension implements ForumOperationExtension {
+public class SCFTechnologyExtension implements ForumOperationExtension {
 
     @Override
     public void afterAction(Operation op, Session sessionUsed, Comment comment, Map<String, Object> parameters)
