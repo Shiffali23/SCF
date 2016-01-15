@@ -70,7 +70,7 @@
         viewName: "Idea",
         setTech: function(e){
             var tech = this.getField("tech");
-            this.model.setTech(tech);
+            this.model.setTech(tech.join("-"));
             e.preventDefault();
         },
         addLike:function(event){

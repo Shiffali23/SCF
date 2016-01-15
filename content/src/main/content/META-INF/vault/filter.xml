@@ -3,6 +3,5 @@
     <filter root="/apps/scf"/>
     <filter root="/etc/designs/scf"/>
     <filter root="/content/scf"/>
-    <filter root="/etc/tags/Acme"/>
-    <filter root="/etc/tags/acmeideas"/>
+    <filter root="/etc/tags/scfTech"/>
 </workspaceFilter>

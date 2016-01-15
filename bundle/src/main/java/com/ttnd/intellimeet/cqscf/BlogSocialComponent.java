@@ -67,19 +67,15 @@ public class BlogSocialComponent extends AbstractPost<ForumConfiguration> implem
         this.properties = ResourceUtil.getValueMap(resource);
     }
 
-    @Override
-    public List<com.adobe.cq.social.commons.comments.api.Comment.Tag> getTags() {
-        return this.tags;
-    }
 
     private void filterTags() {
         this.tags = new ArrayList<Tag>();
         for(Tag tag:super.getTags()) {
             if(tag.getTagId().startsWith("scfTech:")) {
                 techTag = tag;
-            } else {
-                tags.add(tag);
             }
+                tags.add(tag);
+
         }
     }
 

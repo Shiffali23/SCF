@@ -101,7 +101,7 @@
             <span class='scf-comment-translation generic-translation-button translation-button-children scf-comment-action scf-link' href='#' data-translate-button-id='{{id}}' data-translation-show-original-text="{{i18n "Show Original"}}">{{i18n "Translate"}}</span>
     {{/if}}
     {{#if userModerator}}
-            <select data-attrib="tech">
+            <select data-attrib="tech" multiple>
                 <option value="scfTech:java" {{#if java}}selected{{/if}}>Java</option>
                 <option value="scfTech:cq" {{#if cq}}selected{{/if}}> CQ</option>
                 <option value="scfTech:sling" {{#if sling}}selected{{/if}}>Sling</option>
